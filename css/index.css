@@ -1,0 +1,296 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    background-color: #f6f6f8;
+}
+
+body {
+    /*-webkit-transform:scale(0.8);*/
+    zoom: 80%;
+}
+
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar
+{
+    width: 8px;
+    height: 16px;
+    background-color: #F5F5F5;
+}
+
+/*定义滚动条轨道 内阴影+圆角*/
+::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+    background-color: #555;
+}
+
+.head {
+    margin-left: 40px;
+    margin-bottom: 250px;
+    padding: 70px 50px 50px 50px;
+}
+
+.head ul {
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+.head ul li {
+    float: left;
+    line-height: 100%;
+    padding-right: 55px;
+    list-style: none;
+}
+
+.head ul li img {
+    float: left;
+    width: 70px;
+    height: 73px;
+    filter: invert(100%);
+}
+
+.main {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.bodyRiband {
+    width: 100%;
+    height: 900px;
+    position: absolute;
+    z-index: 0;
+    background: #51d6e5 url("../image/riband.png") repeat-x;
+    background-size: auto 100px;
+    background-position-y: 800px;
+}
+
+.something {
+    width: 100%;
+    min-height: 700px;
+    background-color: #ffffff;
+    box-shadow: 12px -8px 0px 4px RGBA(0,0,0,0.02);
+    position: relative;
+    float: left;
+    z-index: 10;
+}
+
+.st-left {
+    width: 30%;
+    height: 700px;
+    float: left;
+    background: url("../image/firstpart.png") no-repeat;
+    background-position-y: 90%;
+    background-size: 100% 50%;
+    z-index: 10;
+}
+
+.st-left p {
+    padding-top: 200px;
+    margin-left: 30%;
+    width:60%;
+    height: 50px;
+    color: #3cc6d3;
+    font-size: 50px;
+    font-family: "Microsoft YaHei UI";
+    z-index: 10;
+}
+
+.st-right {
+    width: 58%;
+    padding: 3%;
+    float: right;
+}
+
+.st-title {
+    margin: 40px 0px 0px 0px;
+    color: #3cc6d3;
+    float: left;
+    font-size: 80px;
+    font-family: "Microsoft YaHei UI";
+    border-left: 5px solid #3cc6d3;
+}
+
+.st-intro {
+    margin: 120px 0px 0px 10px;
+    color: #3cc6d3;
+    float: left;
+    font-size: 40px;
+    font-family: "Microsoft YaHei UI";
+}
+
+.st-intro a {
+    color: #ff8a49;
+    text-decoration: none;
+}
+
+.headSculpture {
+    width: 90px;
+    height: 95px;
+    margin-left: 40px;
+    margin-top: 30px;
+    border: 5px dashed #3cc6d3;
+}
+
+.blog-t {
+    width: 100%;
+    text-align: center;
+    float: left;
+    margin: 100px 0px 100px 0px;
+    color: #3cc6d3;
+    font-size: 50px;
+    font-family: "Microsoft YaHei UI Light";
+}
+
+.blog {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    min-height: 480px;
+    float: left;
+    position: relative;
+    background-color: #ffffff;
+}
+
+.one-blog {
+    width: 91%;
+    height: 400px;
+    position: relative;
+    float: right;
+    border-left: 2px solid #3cc6d3;
+}
+
+.blog-date {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 12.5%;
+    position: absolute;
+    top: 20px;
+    left: -13.1%;
+    text-align: center;
+    color: #3cc6d3;
+    font-size: 50px;
+    font-weight: 700;
+    font-family: "Microsoft YaHei UI";
+    border: 2px solid #3cc6d3;
+}
+
+.blog-title {
+    margin: 0;
+    padding: 10px;
+    position: absolute;
+    left: 2px;
+    top: 85px;
+    color: #3cc6d3;
+    font-size: 50px;
+    font-family: "Microsoft YaHei UI Light";
+    border: 2px solid #3cc6d3;
+}
+
+.blog-abstract {
+    width: 80%;
+    height: 200px;
+    text-overflow: ellipsis;
+    margin: 0;
+    position: relative;
+    left: 10%;
+    top: 180px;
+    font-size: 30px;
+    font-weight: 200;
+    font-family: "Microsoft YaHei UI";
+
+    /*省略多出去的文字*/
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.blog-m {
+    text-align: center;
+    margin: 100px 100px 200px 38%;
+    padding: 10px;
+    float: left;
+    width: auto;
+    color: #555555;
+    font-size: 50px;
+    font-family: "Microsoft YaHei UI Light";
+    border: 2px solid #555555;
+    border-radius: 10px;
+}
+
+.message {
+    width: 100%;
+    background-color: #b0b0b0;
+    float: left;
+}
+
+.middle {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.text {
+    width: 60%;
+    margin-bottom: 60px;
+    float: left;
+}
+
+.over {
+    margin: 80px;
+    width: 800px;
+    height: 320px;
+    overflow: hidden;
+    float: left;
+}
+
+.show {
+    width: 2400px;
+    height: 300px;
+    float: left;
+}
+
+.show p {
+    margin: 0px 0px 10px 0px;
+    width: 800px;
+    height: 100px;
+    font-family: "Microsoft YaHei UI";
+    font-size: 26px;
+    color: #f6f6f8;
+    float: left;
+
+    /*省略多出去的文字*/
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.se-all {
+    margin-left: 450px;
+}
+
+.select {
+    margin-left: 30px;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #f6f6f8;
+    float: left;
+    cursor: pointer;
+}
+
+.se-img {
+    margin: 50px 0px 0px 0px;
+    width: 38%;
+    float: right;
+}
